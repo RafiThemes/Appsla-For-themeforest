@@ -1,0 +1,147 @@
+/*============================================ 
+Template Name: SaasMart - Multipurpose Saas Landing Template
+Version: 1.0
+Author: Codeshaperbd
+Author URI: https://themeforest.net/user/codeshaperbd 
+
+/*======== Table of Css Content ==========*/
+/* ===== 01 Normalize Css ===== */
+/* ===== 02 Buttons Css ===== */
+/* ===== 03 Global Css ===== */
+/* ===== 04 Padding Margin Css ===== */
+/* ===== 05 Main-menu Css ===== */
+/* ===== 06 Banners Css ===== */
+/* ===== 07 Footer Css ===== */
+/* ===== 08 Hot-it-works Css ===== */
+/* ===== 09 About Start ===== */
+/* ===== 10 Doctors Start ===== */
+/* ===== 11 Membership Start ===== */
+/* ===== 12 testomonial Start ===== */
+/* ===== 13 Pricing Css ===== */
+/* ===== 14 Blog Start ===== */
+/* ===== 15 Download Start ===== */
+/* ===== 16 Dark Css ===== */
+/* ===== 17 Preloader Css ===== */
+/* ===== 18 Scroll Bottom To Top Css ===== */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+// font-family: 'Crimson Text', serif;
+// font-family: 'Work Sans', sans-serif;
+
+
+/* ===== Global SCSS ===== */
+@import "main/_variables.scss";
+@import "main/_normalize.scss";
+@import "main/_buttons.scss";
+@import "main/_global.scss";
+@import "main/_pama.scss";
+
+/* ===== Pages SCSS ===== */
+@import "pages/_menu.scss";
+@import "pages/_banner-footer.scss";
+@import "pages/_section.scss";
+@import "pages/_dark.scss";
+
+
+/* ===== 17 Preloader Css ===== */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #8C50FF 0%, #0072ddf2 100%);
+    overflow: hidden;
+
+    .preloader-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        .preloader-icon {
+            width: 72px;
+            height: 72px;
+            display: inline-block;
+            padding: 0px;
+
+            span {
+                position: absolute;
+                display: inline-block;
+                width: 72px;
+                height: 72px;
+                border-radius: 100%;
+                background: #fff;
+                -webkit-animation: preloader-fx 1.6s linear infinite;
+                animation: preloader-fx 1.6s linear infinite;
+
+                &:last-child {
+                    animation-delay: -0.8s;
+                    -webkit-animation-delay: -0.8s;
+                }
+            }
+        }
+
+    }
+}
+
+@keyframes preloader-fx {
+    0% {
+        -webkit-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+/* ===== Preloader End ===== */
+
+/* ===== 18 Scroll Bottom To Top Css ===== */
+.scrollToTop {
+    text-decoration: none;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: $primary-color;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 45px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 9;
+    cursor: pointer;
+    transform: translateY(100%);
+}
+
+.scrollToTop.active {
+    bottom: 30px;
+    transform: translateY(0%);
+    color: #ffffff;
+}
+
+.scrollToTop:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+    .scrollToTop.active {
+        bottom: 10px;
+    }
+
+    .scrollToTop {
+        right: 10px;
+    }
+}
+/* ===== Scroll Bottom To Top End ===== */

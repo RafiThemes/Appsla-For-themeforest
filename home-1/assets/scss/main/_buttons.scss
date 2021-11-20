@@ -1,0 +1,50 @@
+/* ===== 02 Buttons Css ===== */
+.button-1 {
+    display: inline-block; 
+    padding: 12px 32px 12px; 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 1px;
+    background: $primary-color;
+    color: $white;
+    border: 1px solid $primary-color;
+    transition: 0.3s; 
+    box-shadow: 0px 8px 16px rgba(67, 83, 255, 0.24);
+    border-radius: 24px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $primary-color;
+        background: transparent;
+        border: 1px solid $primary-color;
+        box-shadow: 0px 8px 16px rgba(140, 80, 255, 0);
+    }
+}
+
+.button-2 { 
+    display: inline-block;
+    padding: 12px 32px 12px; 
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 1px;
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    transition: 0.3s; 
+    box-shadow: 0px 0px 0px rgba(0, 114, 221, 0);
+    border-radius: 24px;
+    text-transform: uppercase;
+
+    &:hover { 
+        background: transparent;
+        border: 1px solid $primary-color;
+        box-shadow: 0px 8px 16px rgba(67, 83, 255, 0.24);
+        background: $primary-color;
+        color: $white; 
+    }
+}
+ 

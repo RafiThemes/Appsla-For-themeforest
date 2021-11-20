@@ -1,0 +1,630 @@
+/*----------------------------------------------------------------------------------
+
+Project :  SaasMart - Multipurpose Saas Landing Page
+
+-------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------
+ 
+
+--------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------
+    Default CSS
+---------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #39404a;
+    position: relative;
+    overflow-x: hidden;
+
+    background: #FAFDFF;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+button {
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+a {
+    color: #39404a;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0px;
+    margin: 0px;
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    font-weight: 600;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 18px;
+    color: #39404a;
+    line-height: 1.4;
+    padding: 0px;
+    margin: 0px;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px 12px;
+    background: #125af5;
+    color: #fff;
+    font-size: 18px;
+
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    box-shadow: 0px 8px 16px rgb(0 114 221 / 24%);
+    color: #fff;
+}
+
+
+.mt-20 {
+    margin-top: 20px;
+}
+/*-------------------------------------------------------------------------------------
+    Site Preloader
+---------------------------------------------------------------------------------------*/
+
+.preloader {
+    background-color: #0072DD;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.preloader .spinner {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------
+  Menu Start
+---------------------------------------------------------------------------------------*/
+.menu {
+    background: #ffffffee;
+    padding: 20px 0px 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 25px 35px 0 rgb(0 0 0 / 15%);
+}
+
+.menu .menu-list li {
+    display: inline-block;
+    padding: 5px 10px 5px;
+}
+
+.menu .menu-list li a {
+    font-size: 18px;
+
+    color: #39404a;
+    transition: 0.3s;
+}
+
+.menu .menu-list li a:hover {
+    color: #125af5;
+}
+
+/*-------------------------------------------------------------------------------------
+  Menu End
+---------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------------------------
+  Banner Start
+---------------------------------------------------------------------------------------*/
+
+.banner {
+    background-size: cover !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 332px 0px 240px;
+    background: #125af5;
+    position: relative;
+}
+
+.banner::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(18, 90, 245, 0.85);
+}
+
+.banner-content .banner-meta {
+    padding-bottom: 10px;
+}
+
+.banner-content .banner-meta span {
+    color: #ffff;
+    font-size: 20px;
+
+    padding: 0px 10px 0px;
+    text-transform: capitalize;
+}
+
+.banner-content .banner-meta span:first-child {
+    position: relative;
+}
+
+.banner-content .banner-meta span:first-child:after {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    height: 15px;
+    width: 1px;
+    content: "";
+    background: #fff;
+    transform: translateY(-50%);
+}
+
+.banner-content h1,
+.banner-content h2 {
+
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.banner-content h3 {
+    padding-top: 33px;
+    color: #ffff;
+    font-size: 20px;
+
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.banner-content .list {
+    padding-top: 15px;
+}
+
+.banner-content .list li {
+    height: 80px;
+    width: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 10px 10px 10px;
+    box-shadow: 0 25px 35px 0 rgb(0 0 0 / 15%);
+    transition: 0.3s;
+}
+
+.banner-content .list li:hover {
+    transform: translateY(-15px);
+}
+
+.banner-content .list li img {
+    height: 40px;
+}
+
+/*-------------------------------------------------------------------------------------
+     Live Demo
+---------------------------------------------------------------------------------------*/
+#demo-area {
+    padding: 109px 0 50px;
+}
+
+.demo .content h2 {
+    text-transform: capitalize;
+}
+
+.demo .content {
+    margin-bottom: 10px;
+}
+
+.demo .content p {
+
+    padding-top: 5px;
+}
+
+.demo-item {
+    margin-top: 30px;
+    position: relative;
+    background: #125af5;
+    padding-bottom: 20px;
+}
+
+.demo-item:hover .demo-overlay {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.demo-inner {
+    box-shadow: 3px 5px 25px 0 rgb(0 0 0 / 10%);
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.demo-inner .img-fluid {
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(0%);
+    transition: transform ease 5s;
+}
+
+.demo-item:hover .img-fluid {
+    transform: translateY(calc(-100% + 600px));
+}
+
+.demo-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(85, 138, 242, 0.5);
+    opacity: 0;
+    visibility: visible;
+    -webkit-transition: 0.3s;
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-overlay a {
+    display: inline-block;
+    background-color: #fff;
+    color: #0072DD;
+    font-weight: 600;
+    padding: 12px 40px 12px;
+    border-radius: 30px;
+    margin: 30px 10px 0;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.349);
+}
+
+.demo-overlay a:hover {
+    background: #0072DD;
+    border: 1px solid #0072DD;
+    color: rgb(255, 255, 255);
+}
+
+.demo-item h3 {
+    text-align: center;
+}
+
+.demo-item h3 a {
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    margin: 15px 0px 0px;
+}
+  
+
+/* ========= Ribbon Start ========= */
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    overflow: hidden;
+}
+
+.wrap:before,
+.wrap:after {
+    content: "";
+    position: absolute;
+}
+
+.wrap:before {
+    width: 40px;
+    height: 8px;
+    right: 100px;
+    background: #4D6530;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.wrap:after {
+    width: 8px;
+    height: 40px;
+    right: 0px;
+    top: 100px;
+    background: #4D6530;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.ribbon6 {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px dashed;
+    background: linear-gradient(45deg, #0072DD 0%, #3e19ff 100%);
+    text-align: center;
+}
+
+@media (min-width: 500px) {
+    .ribbons-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .ribbon {
+        width: 48%;
+    }
+}
+
+/* ========= Ribbon End ========= */
+
+
+/* ========= Feature-area Strat ========= */
+
+.feature-area {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 50px 0 60px;
+}
+
+.feature-area .area-title h2 {
+    color: #39404a;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.feature-area .feature-card {
+    margin-top: 30px;
+    background: #fff;
+    box-shadow: 0 15px 35px 0 rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    text-align: center;
+    padding: 35px 25px 30px;
+    transition: 0.3s;
+    min-height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-area .feature-card:hover {
+    transform: translateY(-15px);
+}
+
+.feature-area .feature-card .feature-img {
+    width: auto;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+.feature-area .feature-card .feature-text {
+    font-size: 20px;
+
+    text-transform: capitalize;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------
+    Footer Area
+---------------------------------------------------------------------------------------*/
+
+.footer {
+    padding-top: 60px;
+}
+
+
+.footer-content {
+    padding-bottom: 60px;
+}
+
+.footer-content h2 {
+    padding: 22px 0px 38px;
+
+}
+
+
+.footer-copyright {
+    overflow: hidden;
+    border-top: 0 15px 35px 0 rgb(0 0 0 / 15%);
+}
+
+.footer-copyright p {
+    margin: 0;
+    padding: 20px 0px 20px;
+    color: #39404a;
+}
+
+.footer-copyright p a {
+    color: #39404a;
+    transition: 0.3s;
+}
+
+.footer-copyright p a:hover {
+    text-decoration: underline;
+    color: #0072DD;
+}
+
+@media (max-width: 1199px) {
+    .banner {
+        padding: 232px 0px 140px;
+    }
+}
+
+@media (max-width: 991px) {
+    .banner {
+        padding: 212px 0px 120px;
+    }
+
+    .menu .menu-list {
+        display: none !important;
+    }
+
+
+    h1 {
+        font-size: 42px; 
+    }
+
+    h2 {
+        font-size: 36px; 
+    }
+
+}
+
+@media (max-width: 767px) {
+    .banner {
+        padding: 202px 0px 110px;
+    }
+}
+
+@media (max-width: 575px) {
+    .menu .button {
+        display: none !important;
+    }
+
+    .menu .menu-content {
+        justify-content: center !important;
+    }
+
+    
+    h1 {
+        font-size: 36px; 
+    }
+
+    h2 {
+        font-size: 32px; 
+    }
+}

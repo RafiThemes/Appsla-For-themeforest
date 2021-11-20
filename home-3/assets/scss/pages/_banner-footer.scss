@@ -1,0 +1,297 @@
+/* ===== 06 Banners Css ===== */
+.banner {
+    padding: 190px 0px 225px;
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    .banner-content {
+        h1.bannerhead {
+            color: $white;
+        }
+
+        p {
+            font-size: 20px;
+            color: $white;
+            padding: 6px 0px 28px;
+        }
+
+        .button-group {
+            .button-1 {
+                background: #fff;
+                border-color: #fff;
+                color: $primary-color;
+
+                &:hover {
+                    background: transparent;
+                    color: #fff;
+                }
+            }
+
+            .button-2 {
+                background: transparent;
+                color: #fff;
+                border-color: #fff;
+
+                &:hover {
+                    background: #fff;
+                    border-color: #fff;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@keyframes tanatani {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
+@media (max-width: 991px) {
+    .banner {
+        padding: 140px 0px 60px;
+    }
+}
+
+@media (max-width: 575px) { 
+    .banner {
+        padding-bottom: 200px;
+        background-position: top center;
+        min-height: 100vh;
+        height: unset;
+
+        .banner-content {
+            p {
+                padding: 6px 0px 8px;
+            }
+
+            .button-group {
+                .button-1 {
+                    margin-right: 10px;
+                    padding: 10px 22px 10px;
+                }
+
+                .button-2 {
+                    padding: 10px 22px 10px;
+                }
+            }
+        }
+
+    }
+}
+
+/* Banners End */
+
+
+/* ===== 07 Footer Css ===== */
+.footer {
+    padding: 50px 0px 71px;
+    background: #F9FAFF;
+}
+
+.footer {
+    .logo.two {
+        display: none;
+    }
+
+    .logo.one {
+        display: block;
+    }
+}
+
+.darktheme {
+    .footer {
+        .logo.two {
+            display: block;
+        }
+
+        .logo.one {
+            display: none;
+        }
+    }
+}
+
+.footer-box {
+    margin-bottom: -4px;
+
+    .social-link {
+        padding-top: 20px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: -10px -10px -10px;
+        margin-top: 0px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #485866;
+            transition: 0.3s;
+            margin: 10px 10px 10px;
+
+            i {
+                font-size: 18px;
+                line-height: 0px;
+            }
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    p {
+        color: #485866;
+    }
+
+    h6 {
+        color: #1F2C38;
+        font-size: 22px;
+        line-height: 1.1;
+        font-weight: 600;
+    }
+
+    .footer-link {
+        padding-top: 17px;
+
+        li {
+            padding-top: 5px;
+
+            a {
+                position: relative;
+                overflow: hidden;
+                color: #485866;
+
+                &::after {
+                    position: absolute;
+                    top: 2px;
+                    left: -10px;
+                    font-size: 12px;
+                    transition: 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                    color: #485866;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 600;
+                    content: "\f054";
+                }
+
+                &:hover {
+                    padding-left: 15px;
+                    color: #485866;
+
+                    &::after {
+                        position: absolute;
+                        left: 0px;
+                        opacity: 1;
+                        visibility: visible;
+                        color: #485866;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-box {
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #485866;
+    }
+
+    p.text {
+        padding-top: 22px;
+    }
+
+    ul.list {
+        li {
+            padding-top: 8px;
+
+            span {
+                color: #485866;
+                font-weight: 500;
+            }
+
+            font-size: 16px;
+            line-height: 1.5;
+            color: #485866;
+        }
+    }
+}
+
+.footer-bottom {
+    p {
+        color: #2C3A47;
+
+        a {
+            color: #2C3A47;
+
+            &:hover {
+                color: #1F2C38;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .footer-box .footer-link,
+    .footer-box p.text {
+        padding-top: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer .footer-content .left-box {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer .footer-content .right-box .form-group {
+        min-width: unset;
+    }
+
+    .footer .footer-content .right-box .form-group button {
+        padding: 12px;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+    }
+
+    .footer-box .footer-link {
+        padding-top: 14px;
+    }
+
+    .footer .footer-content {
+        justify-content: center !important;
+    }
+
+    .footer .footer-content .right-box {
+        min-width: 100%;
+    }
+
+    .footer .footer-content .right-box .form-group {
+        min-width: 100%;
+    }
+
+    .footer .footer-content .left-box {
+        text-align: center;
+    }
+}

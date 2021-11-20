@@ -1,0 +1,431 @@
+/* ===== 14 Dark Css ===== */
+.darktheme {
+    /* ===== Buttons Css ===== */
+    .button-1 {
+        color: $white !important;
+
+        &:hover {
+            color: $white;
+            border: 1px solid #9FB0BF;
+        }
+    }
+
+    .button-2 {
+        color: $white;
+        border: 1px solid #9FB0BF;
+
+        &:hover {
+            border: 1px solid $primary-color;
+            background: $primary-color;
+            color: $white;
+        }
+    }
+
+
+    /* ===== Global Css ===== */
+    body {
+        color: #9FB0BF;
+        background: #111827;
+    }
+
+    h1,
+    h1>a,
+    h2,
+    h2>a,
+    h3,
+    h3>a {
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    input,
+    textarea {
+        color: #9FB0BF;
+    }
+
+    p,
+    span,
+    a,
+    li {
+        color: #9FB0BF;
+    }
+
+    .bg {
+        background: #111827;
+    }
+
+    .shadow-1 {
+        box-shadow: 0px 0px 1px rgba(31, 44, 56, 0.1), 0px 20px 24px rgba(31, 44, 56, 0.06);
+    }
+
+
+    /* =====  Main-menu Css ===== */
+    .mein-menu {
+        .navbar {
+            #navbarNavDropdown {
+                ul.navbar-nav {
+                    li.nav-item {
+                        .nav-link {
+                            color: rgba(255, 255, 255, 0.9);
+                        }
+                    }
+
+                    li.nav-item {
+                        .nav-link.button-1 {
+                            color: $white;
+                        }
+
+                        .contact {
+                            color: #fff;
+
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    li.nav-item.dropdown-mega {
+                        &::after {
+                            color: $white;
+                        }
+
+                        .droppdown-menu {
+                            background: #1F2937;
+                            box-shadow: 0px 12px 24px rgba(31, 44, 56, 0.1);
+
+                            .dropdown-ul {
+                                .nav-item-chil {
+                                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+                                    &:last-child {
+                                        border-bottom: 1px dotted rgba(0, 0, 0, 0);
+                                    }
+
+                                    .item {
+                                        color: $white;
+
+                                        &:hover {
+                                            color: $primary-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mein-menu .navbar #navbarNavDropdown ul.navbar-nav li.nav-item.dropdown-mega:hover::after,
+    .mein-menu .navbar #navbarNavDropdown ul.navbar-nav li.nav-item.dropdown-mega:hover .nav-link {
+        color: #ffffff;
+    }
+
+    .mein-menu.nav-fixed {
+        background: #1F2937;
+        box-shadow: 0px 12px 24px rgba(47, 65, 129, 0.1);
+    }
+
+    .mein-menu .navbar #navbarNavDropdown ul.navbar-nav li.nav-item.button a.nav-link {
+        color: $white;
+    }
+
+    .mein-menu {
+        .navbar-dark .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    }
+
+    .mein-menu .navbar #navbarNavDropdown ul.navbar-nav li.nav-item.dropdown-mega .droppdown-menu .dropdown-ul .nav-item-chil .item:hover {
+        color: #ffffff;
+    }
+
+    #darklight-2{
+        .light {
+            display: block;
+        }
+        .dark {
+            display: none;
+        }
+    } 
+
+    /* Menu Responsive Start */
+    @media (max-width: 991px) { 
+        .mein-menu.nav-fixed {
+            box-shadow: 0px 12px 24px rgba(47, 65, 129, 0.1);
+        }
+
+        .mein-menu .navbar #navbarNavDropdown ul.navbar-nav li.nav-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .mein-menu .navbar-toggler span .icon-bar {
+            color: #e5e5e5;
+        }
+        .mein-menu.nav-fixed,
+        .mein-menu.active{
+            background: #1F2937;
+            box-shadow: 0px 12px 24px rgba(47, 65, 129, 0.1);
+        }
+        .mein-menu .navbar #navbarNavDropdown ul.navbar-nav li.nav-item.dropadd a.nav-link{
+            color: #fff;
+        }
+
+        
+    }
+
+    .banner .pborder {
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .banner .partner-box .item {
+        .light-img {
+            display: none;
+        }
+
+        .dark-img {
+            display: block;
+        }
+    }
+
+    /* ===== Footer Css ===== */
+    .footer {
+        background: #1F2937;
+
+        .footershap-1,
+        .footershap-2 {
+            opacity: 0.3;
+        }
+    }
+
+    /* ===== 07 About Css ===== */
+    .about-us {
+        background: #111827;
+
+        &::before {
+            display: none;
+        }
+
+        .shape.one,
+        .shape.two {
+            opacity: 0.2;
+        }
+    }
+
+    .video-box {
+        box-shadow: 0px 35px 45px -20px #302c2c;
+    }
+
+    /* ===== About End ===== */
+
+
+
+
+    /* ===== Feature Css ===== */
+    .feature {
+        background: #111827;
+
+        .feature-box {
+            background: #1F2937;
+            box-shadow: 0px 0px 1px rgba(31, 44, 56, 0.24), 0px 3px 8px -1px rgba(31, 44, 56, 0.05);
+
+            &:hover {
+                box-shadow: 0px 10px 24px rgba(255, 255, 255, 0.07);
+            }
+        }
+
+        .fshape.two {
+            opacity: 0.2;
+        }
+    }
+
+    /* ===== Feature End ===== */
+
+
+    /* ===== 09 Why Us Css ===== */
+    .why-us {
+        background: #111827;
+        .wshape-1,
+        .wshape-2,
+        .wshape-3 {
+            opacity: 0.2;
+        }
+
+        .list { 
+            .list-item { 
+                .check { 
+                    color: #9FB0BF;
+                } 
+            }
+        }
+    }
+
+    /* ===== Why Us End ===== */
+
+
+    /* ===== 10 Pricing Css ===== */
+
+    .pricing {
+        background: #1F2937;
+
+        .dot {
+            opacity: 0.2;
+        }
+    }
+
+    .pricing-box {
+        background: #111827;
+        box-shadow: 0px 0px 1px rgba(31, 44, 56, 0.1), 0px 20px 24px rgba(31, 44, 56, 0.06);
+
+        .price {
+            .content {
+                >p {
+                    color: $white;
+                }
+            }
+        }
+
+        .list {
+            .list-item {
+                span {
+                    color: rgba(255, 255, 255, 0.9);
+                }
+            }
+
+            .list-item.gray {
+                span {
+                    color: #718596;
+                }
+            }
+        }
+
+        button.custom {
+            border: none;
+        }
+    }
+
+    .pricing {
+        .toggle-box {
+            .textmonthly {
+                color: #ffffff;
+            }
+        }
+
+        .toggle-box.active {
+            .textmonthly {
+                color: #718596;
+            }
+
+            span {
+                color: #ffffff;
+            }
+        }
+    }
+
+    /* ===== Pricing End ===== */
+
+
+    /* ===== 11 Testimonials Css ===== */
+    .testimonials {
+        background: #111827;
+    }
+
+    .testomonial-box {
+
+        .single-testo {
+            .content {
+                background: #1F2937;
+                box-shadow: 0px 0px 1px rgba(31, 44, 56, 0.1), 0px 20px 24px rgba(31, 44, 56, 0.06);
+
+                .bottom-content {
+                    p {
+                        color: #9FB0BF;
+                    }
+
+                    .name {
+                        span {
+                            color: #9FB0BF;
+                        }
+                    }
+                }
+            }
+        }
+
+        .owl-dots {
+            .owl-dot {
+                background: #ffffff00 !important;
+
+                span {
+                    background: #ffffff;
+                }
+            }
+
+            .owl-dot.active {
+                background: #0072dd00 !important;
+                border: 1px solid #ffffff;
+            }
+        }
+
+    }
+
+    @media (max-width: 575px) {
+        .testomonial-box .single-testo .content {
+            background: #1F2937;
+        }
+    }
+
+    /* ===== Testimonials End ===== */
+ 
+
+    /* ===== 12 Contact Css ===== */
+    .contact {
+        background: #111827;
+
+        .left-content {
+            .list {
+                .list-item {
+                    p {     color: $white;
+                        span {
+                            color: $white;
+                        }
+                    }
+                   a {     color: $white;
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .text-box.one {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+            }
+        }
+
+        .right-box {
+            .form-group {
+
+                input,
+                textarea {
+                    border: 1px solid #9FB0BF;
+                    color: #ffffff;
+                    background: rgba(255, 255, 255, 0);
+
+                    &::placeholder {
+                        color: #9FB0BF;
+                    }
+
+                    &:focus {
+                        border: 1px solid #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ===== Contact End ===== */
+}
